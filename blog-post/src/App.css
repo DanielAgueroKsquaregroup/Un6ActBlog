@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Global styles */
+.blue{ color: #0077ff; }
+
+.white{ color: #ffffff; }
+
+.full-height{ height: 100vh; }
+
+.container{
+  background-color: #0077ff;
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.link{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffee00;
+  font-weight: bold;
+  margin: 25px auto;
+  width: 25%;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all ease-in-out .3s;
+}
+
+.link:hover{
+  background-color: #ffae00;
+  transition: all ease-in-out .3s;
+}
+
+nav{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* LoginPage */
+form{
+  background-color: #0077ff;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+label{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+label, input, button[type="submit"]{
+  font-family: 'Roboto', sans-serif;
+  width: 25%;
+  justify-self: center;
+  padding: 10px 0;
+  border: 0;
+  text-align: center;
+}
+
+button[type="submit"]{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+  background-color: #ffee00;
+  cursor: pointer;
+}
+
+/* FoundError */
+.error-header{
+  color: #ff0000;
+  font-size: 64px;
+}
+
+.error-text{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* LandingPage */
+
+.welcome-text{
+  padding-bottom: 40px;
+  font-size: 30px;
+}
+
+.welcome-img{ width: 40%; }
+
+.sig-up-btn{
+  display: block;
+  margin-top: 30px;
+}
+
+/* Posts */
+.posts-container{
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.post-info{
+  border: 1px solid #aaaaaa;
+  background-color: #ffffff;
+  width: 95%;
+  height: 95%;
+  transition: all ease-in-out .3s;
+}
+
+.post-info:hover{
+  border: 1px solid #000000;
+  background-color: #f1dec8;
+  transition: all ease-in-out .3s;
+}
+
+/* SinglePost */
+.single-post{ height: fit-content; }
