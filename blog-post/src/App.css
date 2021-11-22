@@ -154,3 +154,5 @@ button[type="submit"]{
 
 /* SinglePost */
 .single-post{ height: fit-content; }
+
+.single-post p{ color: #000000; }

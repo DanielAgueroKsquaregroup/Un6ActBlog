@@ -15,7 +15,6 @@ function App() {
       <BarHeader />
       <Routes>
         <Route path="/post/:id" element={<SinglePost />} />
-        {/* <ProtectedRoute exact path="/posts" element={FetchingData} /> */}
         <Route
           path="/posts"
           element={
@@ -24,7 +23,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-        {/* <Route path="/posts" element={<FetchingData />}/> */}
         <Route path="/signin" element={<LoginPage />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="*" element={<FoundError />} />

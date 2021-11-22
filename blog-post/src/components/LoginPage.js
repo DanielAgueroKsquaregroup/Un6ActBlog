@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import FetchingData from "./FetchingData";
 
 function LoginPage(){
+    
     const [userData, setUserData] = useState({ username: "", password: "" });
     const [errorMessage, setErrorMessage] = useState({ value: "" });
 
@@ -14,6 +15,7 @@ function LoginPage(){
             }
         });
     }
+
     const handleOnSubmit = (e) => {
         e.preventDefault();
 
@@ -31,11 +33,8 @@ function LoginPage(){
             setErrorMessage(prevState => ({ value: "Invalid password or username" }));
             return;
         }
-
-        /* return(
-            <FetchingData />
-        ); */
     };
+
     return(
         <div>
             <form id="form">
